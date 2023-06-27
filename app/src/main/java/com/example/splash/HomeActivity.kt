@@ -21,5 +21,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(toweb)
         }
 
+        val btn_rec=findViewById<Button>(R.id.btn_rec)
+        btn_rec.setOnClickListener {
+            val rec=Intent(this,RecyclersActivity2::class.java)
+            startActivity(rec)
+        }
+
     }
 }
